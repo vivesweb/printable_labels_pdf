@@ -174,9 +174,6 @@ class printable_labels_pdf
 		$this->default_font_size	= ((isset($labels_config['default_font_size']))?$labels_config['default_font_size']:0); 	// If not set, 0 that means CSS default
 		$this->draw_border			= ((isset($labels_config['draw_border']))?$labels_config['draw_border']:false); 	// If not set, false that means without borders
 		$this->flux_start_at_label	= ((isset($labels_config['start_at_label']))?$labels_config['start_at_label']:1); // If not set, 1 that means at first label
-
-		$this->width_label 			-= ( $this->padding_left_label );
-		$this->height_label			-= ( $this->padding_top_label );
 		
 		
 		$this->margin_left_page 	-= $this->margin_left_label;
