@@ -21,16 +21,16 @@ $labels_config['page_orientation']		= 'P'; // Orientation 'L'andscape 'P'ortrait
 $labels_config['width_label']			= 8.89;
 $labels_config['height_label']			= 2.33;
 
-$labels_config['num_cols']			= 2;
-$labels_config['num_rows']			= 12;
+$labels_config['num_cols']				= 2;
+$labels_config['num_rows']				= 12;
 
 $labels_config['margin_left_page']		= 1.3;
 $labels_config['margin_top_page']		= .2;
 
-$labels_config['margin_right_label']		= .2;
-$labels_config['margin_bottom_label']		= .2;
+$labels_config['margin_left_label']		= .2;
+$labels_config['margin_bottom_label']	= .2;
 
-$labels_config['padding_left_label']		= .25;
+$labels_config['padding_left_label']	= .25;
 $labels_config['padding_top_label']		= .25;
 
 $labels_config['skip_first_row']		= true;
@@ -39,7 +39,7 @@ $labels_config['skip_last_row']			= true;
 $labels_config['default_font']			= 'Times';
 $labels_config['default_font_size']		= 9;
 
-$labels_config['begin_at_label_num']		= 4; // Defaults begin with label num. 1
+$labels_config['begin_at_label_num']	= 4; // Defaults begin with label num. 1
 
 
 // Create an Instance of printable_labels_pdf()
@@ -52,10 +52,10 @@ $printable_labels_pdf->draw_border( true );
 for( $i=1; $i<2500; $i++){
 	
 	// Make a string of the html label
-	$label_html  = '<b>label '.$i.'</b><br />'; 	// 1st row. Bold
+	$label_html  = '<b>label '.$i.'</b><br />'; // 1st row. Bold
 	$label_html .= '<i>Line 2</i><br />'; 		// 2nd row. Italic
 	$label_html .= '<u>Line 3</u><br />'; 		// 3th row. Underline
-	$label_html .= 'Line 4'; 			// 4th row. Standard text
+	$label_html .= 'Line 4'; 					// 4th row. Standard text
 	
 	// send the html string to a new label
 	$printable_labels_pdf->write_label( $label_html );
@@ -69,13 +69,12 @@ $printable_labels_pdf->get_labels_pdf(); // Output a PDF file directly to the br
 a) Show directly in the browser (default)
 
 $printable_labels_pdf->get_labels_pdf('test.pdf', 'I'); // Output a PDF file directly to the browser
-$printable_labels_pdf->get_labels_pdf( ); // Same result
 
 
 
 b) Get a String of the pdf to do something with it later:
 
-$SomeVarPdfString = $printable_labels_pdf->get_labels_pdf('test.pdf', 'S'); // Get pdf in string format and assign to $SomeVarPdfString. File Name is ignored
+$SomeVarPdfString = $printable_labels_pdf->get_labels_pdf('test.pdf', 'S'); // Get pdf in string format and assign to $SomeVarPdfString
 
 
 
