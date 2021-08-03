@@ -156,51 +156,51 @@ class printable_labels_pdf
 	 * @param array $labels_config
 	 */
     public function __construct( $labels_config ) {
-		$this->width_label 			= $labels_config['width_label'];
+		$this->width_label 		= $labels_config['width_label'];
 		$this->height_label 		= $labels_config['height_label'];
-		$this->num_rows 			= $labels_config['num_rows'];
-		$this->num_cols				= ((isset($labels_config['num_cols']))?$labels_config['num_cols']:2); 						// If not set, 2 cols by default
+		$this->num_rows 		= $labels_config['num_rows'];
+		$this->num_cols			= ((isset($labels_config['num_cols']))?$labels_config['num_cols']:2); 				// If not set, 2 cols by default
 		$this->margin_left_page		= ((isset($labels_config['margin_left_page']))?$labels_config['margin_left_page']:0); 		// If not set, 0 by default
 		$this->margin_top_page		= ((isset($labels_config['margin_top_page']))?$labels_config['margin_top_page']:0); 		// If not set, 0 by default
 		$this->margin_right_label	= ((isset($labels_config['margin_right_label']))?$labels_config['margin_right_label']:0); 	// If not set, 0 by default
-		$this->margin_bottom_label	= ((isset($labels_config['margin_bottom_label']))?$labels_config['margin_bottom_label']:0); // If not set, 0 by default
+		$this->margin_bottom_label	= ((isset($labels_config['margin_bottom_label']))?$labels_config['margin_bottom_label']:0); 	// If not set, 0 by default
 		$this->padding_left_label	= ((isset($labels_config['padding_left_label']))?$labels_config['padding_left_label']:0); 	// If not set, 0 by default
 		$this->padding_top_label	= ((isset($labels_config['padding_top_label']))?$labels_config['padding_top_label']:0); 	// If not set, 0 by default
 		$this->skip_first_row		= ((isset($labels_config['skip_first_row']))?$labels_config['skip_first_row']:false); 		// If not set, false by default
 		$this->skip_last_row		= ((isset($labels_config['skip_last_row']))?$labels_config['skip_last_row']:false); 		// If not set, false by default
-		$this->page_format			= ((isset($labels_config['page_format']))?$labels_config['page_format']:'A4'); 				// If not set, 'A4' by default
+		$this->page_format		= ((isset($labels_config['page_format']))?$labels_config['page_format']:'A4'); 			// If not set, 'A4' by default
 		$this->page_orientation		= ((isset($labels_config['page_orientation']))?$labels_config['page_orientation']:'P'); 	// If not set, 'P'ortrait by default
-		$this->default_font			= ((isset($labels_config['default_font']))?$labels_config['default_font']:'Times'); 		// If not set, 'Times'
+		$this->default_font		= ((isset($labels_config['default_font']))?$labels_config['default_font']:'Times'); 		// If not set, 'Times'
 		$this->default_font_size	= ((isset($labels_config['default_font_size']))?$labels_config['default_font_size']:0); 	// If not set, 0 that means CSS default
-		$this->draw_border			= ((isset($labels_config['draw_border']))?$labels_config['draw_border']:false); 	// If not set, false that means without borders
-		$this->flux_start_at_label	= ((isset($labels_config['start_at_label']))?$labels_config['start_at_label']:1); // If not set, 1 that means at first label
+		$this->draw_border		= ((isset($labels_config['draw_border']))?$labels_config['draw_border']:false);			// If not set, false that means without borders
+		$this->flux_start_at_label	= ((isset($labels_config['start_at_label']))?$labels_config['start_at_label']:1); 		// If not set, 1 that means at first label
 
-		$this->width_label 			-= ( $this->padding_left_label );
-		$this->height_label			-= ( $this->padding_top_label );
+		$this->width_label 		-= ( $this->padding_left_label );
+		$this->height_label		-= ( $this->padding_top_label );
 
 		
 		$this->begin_at_label_num	= $labels_config['begin_at_label_num'];
-		$this->arr_labels_html = array();
+		$this->arr_labels_html 		= array();
 
 		$this->flux_page_num	= 1;
-		$this->flux_col_num		= 1;
+		$this->flux_col_num	= 1;
 		$this->flux_row_num 	= 1;
 		$this->flux_id_label 	= 0;
 		
 		// Create array values of mpdf config
 		$mpdf_config = [];
 		
-		$mpdf_config['format']				= $this->page_format;
-		$mpdf_config['orientation']			= $this->page_orientation;
+		$mpdf_config['format']			= $this->page_format;
+		$mpdf_config['orientation']		= $this->page_orientation;
 		$mpdf_config['default_font_size']	= $this->default_font_size;
 		$mpdf_config['default_font']		= $this->default_font;
-		$mpdf_config['margin_left']			= $this->margin_left_page * 10; // * 10 = cm.
-		$mpdf_config['margin_top']			= $this->margin_top_page * 10; // * 10 = cm.
+		$mpdf_config['margin_left']		= $this->margin_left_page * 10; // * 10 = cm.
+		$mpdf_config['margin_top']		= $this->margin_top_page * 10; // * 10 = cm.
 		$mpdf_config['margin_right']		= 0;
 		$mpdf_config['margin_bottom']		= 0;
 		
 		// Create an instance of the mpdf class:
-		$this->mpdf							= new \Mpdf\Mpdf( $mpdf_config );
+		$this->mpdf = new \Mpdf\Mpdf( $mpdf_config );
 
 		$this->mpdf->SetTitle('Printable Labels Pdf');
 		$this->mpdf->SetAuthor('Rafael Martin Soto - https://www.inatica.com');
@@ -208,6 +208,7 @@ class printable_labels_pdf
 		$this->mpdf->SetKeywords('Labels, pdf, Rafael Martin Soto, php');
 		
 		$this->set_label_style( $labels_config );
+	    
 		// Free mem
 		unset( $mpdf_config );
 	} // / __construct
@@ -237,8 +238,8 @@ class printable_labels_pdf
 		$count_labels = count($this->arr_labels_html);
 		
 		$this->flux_page_num 	= 1;
-		$this->flux_col_num		= 1;
-		$this->flux_row_num		= 1;
+		$this->flux_col_num	= 1;
+		$this->flux_row_num	= 1;
 		$this->flux_id_label	= 0;
 
 		do{
@@ -328,10 +329,10 @@ class printable_labels_pdf
 		$this->draw_border = $draw_border;
 
 		if( $this->draw_border ){
-			$this->label_style	.= 'border-width:1px;border-color:#000;border-style:solid;';
+			$this->label_style		.= 'border-width:1px;border-color:#000;border-style:solid;';
 			$this->skipped_label_style	.= 'border-width:1px;border-color:#FFF;border-style:solid;';
 		} else {
-			$this->label_style	.= 'border-width:0px;';
+			$this->label_style		.= 'border-width:0px;';
 			$this->skipped_label_style	.= 'border-width:0px;';
 		}
 	} // /draw_border()
@@ -358,7 +359,7 @@ class printable_labels_pdf
 		$this->skipped_label_style = $this->label_style;
 		
 		if( $this->draw_border ){
-			$this->label_style	.= 'border-width:1px;border-color:#000;border-style:solid;';
+			$this->label_style		.= 'border-width:1px;border-color:#000;border-style:solid;';
 			$this->skipped_label_style	.= 'border-width:1px;border-color:#FFF;border-style:solid;';
 		}
 	} // /set_label_style()
