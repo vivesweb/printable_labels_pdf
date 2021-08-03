@@ -73,28 +73,28 @@ Example:
 
 ALL MEASURES ARE IN CM.
 
-- width_label: Width of each label (in cm.).
-- height_label: Height of each label (in cm.).
-- num_rows: Num of rows in the page.
-- num_cols: Num of cols in the page. If not set, 2 cols by default.
-- margin_left_page: Margin at left of page before begin first col of labels (in cm.). If not set, 0 by default.
-- margin_top_page: Margin at top of page before begin first row of labels (in cm.). If not set, 0 by default.
-- margin_right_label: margin between labels at right (in cm.). If not set, 0 by default.
-- margin_bottom_label: margin between labels at bottom (in cm.). If not set, 0 by default.
-- padding_left_label: space between border of label and html content inside the label, beginning at left (in cm.). If not set, 0 by default.
-- padding_top_label: space between border of label and html content inside the label, beginning at top (in cm.). If not set, 0 by default.
-- skip_first_row: set if you want to skip first row. Some printers cannot print the first row. You can to skip it (true|false). If not set, false by default.
-- skip_last_row: set if you want to skip last row. Some printers cannot print the last row. You can to skip it (true|false). If not set, false by default.
-- page_format: Measures of the page ('A4', for example). You can to give a values or a string format. See https://mpdf.github.io/ documentation.
+- _width_label_: Width of each label (in cm.).
+- _height_label_: Height of each label (in cm.).
+- _num_rows_: Num of rows in the page.
+- _num_cols_: Num of cols in the page. If not set, 2 cols by default.
+- _margin_left_page_: Margin at left of page before begin first col of labels (in cm.). If not set, 0 by default.
+- _margin_top_page_: Margin at top of page before begin first row of labels (in cm.). If not set, 0 by default.
+- _margin_right_label_: margin between labels at right (in cm.). If not set, 0 by default.
+- _margin_bottom_label_: margin between labels at bottom (in cm.). If not set, 0 by default.
+- _padding_left_label_: space between border of label and html content inside the label, beginning at left (in cm.). If not set, 0 by default.
+- _padding_top_label_: space between border of label and html content inside the label, beginning at top (in cm.). If not set, 0 by default.
+- _skip_first_row_: set if you want to skip first row. Some printers cannot print the first row. You can to skip it (true|false). If not set, false by default.
+- _skip_last_row_: set if you want to skip last row. Some printers cannot print the last row. You can to skip it (true|false). If not set, false by default.
+- _page_format_: Measures of the page ('A4', for example). You can to give a values or a string format. See https://mpdf.github.io/ documentation.
 	// array: [210,297].
 	
 	// string format: 'A0’ - 'A10', 'B0' - 'B10', 'C0' - 'C10', '4A0', '2A0', 'RA0' - 'RA4', 'SRA0' - 'SRA4', 'Letter', 'Legal', 'Executive', 'Folio', 'Demy', 'Royal', 'A' (Type A paperback 111x178mm), 'B' (Type B paperback 128x198mm).
 	
-- page_orientation: Portrait or Landscape. ('P'|'L'). If not set, 'P'ortrait by default.
-- default_font: String. If not set, 'Times'. See https://mpdf.github.io/ documentation for available fonts.
-- default_font_size: In pixels. If not set, 0 that means CSS default.
-- draw_border: (true|false). You can draw a border around the label. If not set, false that means without borders.
-- start_at_label: To recycle paper, if you have printed some labels and remain labels in blank for print, you can use another time the paper, begin at label num. that you specify here. If not set, 1 that means at first label. :recycle: :smiley:
+- _page_orientation_: Portrait or Landscape. ('P'|'L'). If not set, 'P'ortrait by default.
+- _default_font_: String. If not set, 'Times'. See https://mpdf.github.io/ documentation for available fonts.
+- _default_font_size_: In pixels. If not set, 0 that means CSS default.
+- _draw_border_: (true|false). You can draw a border around the label. If not set, false that means without borders.
+- _start_at_label_: To recycle paper, if you have printed some labels and remain labels in blank for print, you can use another time the paper, begin at label num. that you specify here. If not set, 1 that means at first label. :recycle: :smiley:
 	
 	
  The distribution of number labels:
