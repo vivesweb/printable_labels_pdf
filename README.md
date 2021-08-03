@@ -89,6 +89,55 @@ ALL MEASURES ARE IN CM.
 - start_at_label: To recycle paper, if you have printed some labels and remain labels in blank for print, you can use another time the paper, begin at label num. that you specify here. If not set, 1 that means at first label. :recycle: :smiley:
 	
 	
+ The distribution of number labels:
+	
+	---------------------
+	| label 1 | label 2 |
+	---------------------
+	| label 3 | label 4 |
+	---------------------
+	| label 5 | label 6 |
+	---------------------
+	| label 7 | label 8 |
+	---------------------
+	| label 9 | label 10|
+	---------------------
+	
+		
+	Ex. If you want to begin at label 6 (that is 3 row second col), then set $begin_at_label_num to 6
+	For our example, the pdf will be created as it:
+	---------------------
+	| skipped | skipped |
+	---------------------
+	| skipped | skipped |
+	---------------------
+	| skipped | label 6 |
+	---------------------
+	| label 7 | label 8 |
+	---------------------
+	| label 9 | label 10|
+	---------------------
+	
+	
+	IMPORTANT!!!! if you skip first row, the id's keep its natural order:
+	
+	---------------------
+	| skipped | skipped |
+	---------------------
+	| label 3 | label 4 |
+	---------------------
+	| label 5 | label 6 |
+	---------------------
+	| label 7 | label 8 |
+	---------------------
+	| label 9 | label 10|
+	---------------------
+	
+	Then, if whe skip first row and set $begin_at_label_num with 1, 2 or 3,
+	whe will have the same result because in all the cases it will begin at label 3
+	
+	
+	
 - **DRAW BORDERS:**
 
 *$printable_labels_pdf->draw_border( true );*
