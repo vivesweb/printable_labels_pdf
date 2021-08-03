@@ -52,10 +52,10 @@ $printable_labels_pdf->draw_border( true );
 for( $i=1; $i<2500; $i++){
 	
 	// Make a string of the html label
-	$label_html  = '<b>label '.$i.'</b><br />'; // 1st row. Bold
+	$label_html  = '<b>label '.$i.'</b><br />'; 	// 1st row. Bold
 	$label_html .= '<i>Line 2</i><br />'; 		// 2nd row. Italic
 	$label_html .= '<u>Line 3</u><br />'; 		// 3th row. Underline
-	$label_html .= 'Line 4'; 					// 4th row. Standard text
+	$label_html .= 'Line 4'; 			// 4th row. Standard text
 	
 	// send the html string to a new label
 	$printable_labels_pdf->write_label( $label_html );
