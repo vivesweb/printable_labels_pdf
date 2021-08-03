@@ -13,10 +13,16 @@ You can get a pdf file with labels for print. It can set easely with any type of
     - Simple Raspberry pi (B +	512MB	700 MHz ARM11) with Raspbian Lite PHP7.3 (i love this gadgets)  :heart_eyes:
  		
     - VirtualBox Ubuntu Server 20.04.2 LTS (Focal Fossa) with PHP7.4.3
+
+- **MPDF LIBRARY NEEDED TO BY INSTALLED: https://mpdf.github.io/**
+- Ensure to add correct path at line 106:
+
+          require_once __DIR__ . '/mpdf/vendor/autoload.php';
  
  
   # FILES:
  *printable_labels_pdf_class.php* -> **Main File**.
+ 
  *example.php* -> **Example File**.
  
  
