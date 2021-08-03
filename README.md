@@ -33,7 +33,7 @@ https://github.com/vivesweb/printable_labels_pdf/blob/main/pritable_labels_pdf.p
  # INSTALLATION:
  A lot of easy :smiley:. It is written in PURE PHP. Only need to include the files. Tested on basic PHP installation
  
-         require_once( 'csv_pair_file_class.php' );
+         require_once( 'printable_labels_pdf_class.php' );
          
 * You need to install mpdf library. Remember to set writable mpdf/vendor/mpdf/mpdf/tmp. See https://mpdf.github.io/ documentation
 * If you change the mpdf dir installation, make sure mpdf library is included in printable_labels_pdf_class.php at line 106 in printable_labels_pdf_class.php:
@@ -43,7 +43,7 @@ https://github.com/vivesweb/printable_labels_pdf/blob/main/pritable_labels_pdf.p
  
 # RESUME OF METHODS:
 
-- **CREATE CSV PAIR OBJECT:**
+- **CREATE PRINTABLE LABELS PDF OBJECT:**
  
 *$printable_labels_pdf = new printable_labels_pdf( $labels_config );*
 
