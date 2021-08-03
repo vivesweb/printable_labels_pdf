@@ -29,7 +29,7 @@ https://github.com/vivesweb/printable_labels_pdf/blob/main/pritable_labels_pdf.p
     - VirtualBox Ubuntu Server 20.04.2 LTS (Focal Fossa) with PHP7.4.3
 
 - **MPDF LIBRARY NEEDED TO BY INSTALLED: https://mpdf.github.io/**
-- Ensure to add correct path at line 106:
+- Ensure to add correct path at line 106 in the file _printable_labels_pdf_class.php_:
 
           require_once __DIR__ . '/mpdf/vendor/autoload.php';
  
