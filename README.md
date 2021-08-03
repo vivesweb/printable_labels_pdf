@@ -24,7 +24,7 @@ https://github.com/vivesweb/printable_labels_pdf/blob/main/pritable_labels_pdf.p
           require_once __DIR__ . '/mpdf/vendor/autoload.php';
  
  
-  # FILES:
+# FILES:
  *printable_labels_pdf_class.php* -> **Main File**.
  
  *example.php* -> **Example File**.
@@ -142,7 +142,37 @@ $printable_labels_pdf->get_labels_pdf('test.pdf', 'D'); // Download pdf
 $printable_labels_pdf->get_labels_pdf('/some_dir/test.pdf', 'F'); // Save pdf in some dir of the server
   
   
-
+  
+**BENCHMARK:**
+ 
+You have included a Benchmark in the internal data of pdf properties (see creator application data) :D
+ 
+ Configuration TEST in Virtual Ubuntu Linux:
+ - Num labels: 2.499
+ - 4 lines each label
+ - Line 1: Bold
+ - Line 2: italic
+ - Line 3: underline
+ - Line 4: normal
+ - Format Page: A4
+ - Distribution of labels 2 cols x 12 rows
+ - Skip first row: true
+ - Skip last row: true
+ - Print Border: true
+ - Begin at label 4
+ - Label Width: 8.89
+ - Label height: 2.33
+ - margin_left_page: 1.3
+ - margin_top_page: .2
+ - margin_right_label: .2
+ - margin_bottom_label: .2
+ - padding_left_label: .25
+ - padding_top_label: .25
+  
+ RESULT:
+ - 125 pages created in 18 seconds
+ 
+* See the original pdf created for benchmark here: https://github.com/vivesweb/printable_labels_pdf/blob/main/pritable_labels_pdf.pdf
  
  **Of course. You can use it freely :vulcan_salute::alien:**
  
