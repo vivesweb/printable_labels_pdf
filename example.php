@@ -69,6 +69,7 @@ $printable_labels_pdf->get_labels_pdf(); // Output a PDF file directly to the br
 a) Show directly in the browser (default)
 
 $printable_labels_pdf->get_labels_pdf('test.pdf', 'I'); // Output a PDF file directly to the browser
+$printable_labels_pdf->get_labels_pdf( ); // Same result
 
 
 
