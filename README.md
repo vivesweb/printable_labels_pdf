@@ -72,7 +72,7 @@ ALL MEASURES ARE IN CM.
 - default_font: String. If not set, 'Times'. See https://mpdf.github.io/ documentation for available fonts.
 - default_font_size: In pixels. If not set, 0 that means CSS default.
 - draw_border: (true|false). You can draw a border around the label. If not set, false that means without borders.
-- start_at_label: For recicle paper, if you have printed some labels and remain labels in blank for print, you can use another time the paper, begin in the label that you specify here. If not set, 1 that menas at first label.
+- start_at_label: For recicle paper, if you have printed some labels and remain labels in blank for print, you can use another time the paper, begin at label num. that you specify here. If not set, 1 that means at first label.
 	
 	
 - **DRAW BORDERS:**
