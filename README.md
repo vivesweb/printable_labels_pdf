@@ -106,7 +106,9 @@ ALL MEASURES ARE IN CM.
 	---------------------
 	
 		
-	Ex. If you want to begin at label 6 (that is 3 row second col), then set $begin_at_label_num to 6
+	Ex. Perhups you have a page printed with labels from 1 to 5, and then have the rest labels in blank, without print.
+	You can recycle the label page and use it another time!!!!
+	If you want to print the first label beginning at position 6 (that is 3 row second col), then set $begin_at_label_num to 6
 	For our example, the pdf will be created as it:
 	---------------------
 	| skipped | skipped |
