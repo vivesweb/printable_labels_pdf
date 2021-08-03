@@ -75,7 +75,7 @@ $printable_labels_pdf->get_labels_pdf( ); // Same result
 
 b) Get a String of the pdf to do something with it later:
 
-$SomeVarPdfString = $printable_labels_pdf->get_labels_pdf('test.pdf', 'S'); // Get pdf in string format and assign to $SomeVarPdfString
+$SomeVarPdfString = $printable_labels_pdf->get_labels_pdf('test.pdf', 'S'); // Get pdf in string format and assign to $SomeVarPdfString. File Name is ignored
 
 
 
