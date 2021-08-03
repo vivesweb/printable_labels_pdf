@@ -21,16 +21,16 @@ $labels_config['page_orientation']		= 'P'; // Orientation 'L'andscape 'P'ortrait
 $labels_config['width_label']			= 8.89;
 $labels_config['height_label']			= 2.33;
 
-$labels_config['num_cols']				= 2;
-$labels_config['num_rows']				= 12;
+$labels_config['num_cols']			= 2;
+$labels_config['num_rows']			= 12;
 
 $labels_config['margin_left_page']		= 1.3;
 $labels_config['margin_top_page']		= .2;
 
-$labels_config['margin_right_label']	= .2;
-$labels_config['margin_bottom_label']	= .2;
+$labels_config['margin_right_label']		= .2;
+$labels_config['margin_bottom_label']		= .2;
 
-$labels_config['padding_left_label']	= .25;
+$labels_config['padding_left_label']		= .25;
 $labels_config['padding_top_label']		= .25;
 
 $labels_config['skip_first_row']		= true;
@@ -39,7 +39,7 @@ $labels_config['skip_last_row']			= true;
 $labels_config['default_font']			= 'Times';
 $labels_config['default_font_size']		= 9;
 
-$labels_config['begin_at_label_num']	= 4; // Defaults begin with label num. 1
+$labels_config['begin_at_label_num']		= 4; // Defaults begin with label num. 1
 
 
 // Create an Instance of printable_labels_pdf()
