@@ -86,6 +86,7 @@ ALL MEASURES ARE IN CM.
 - _skip_first_row_: set if you want to skip first row. Some printers cannot print the first row. You can to skip it (true|false). If not set, false by default.
 - _skip_last_row_: set if you want to skip last row. Some printers cannot print the last row. You can to skip it (true|false). If not set, false by default.
 - _page_format_: Measures of the page ('A4', for example). You can to give a values or a string format. See https://mpdf.github.io/ documentation.
+- 
 	// array: [210,297].
 	
 	// string format: 'A0’ - 'A10', 'B0' - 'B10', 'C0' - 'C10', '4A0', '2A0', 'RA0' - 'RA4', 'SRA0' - 'SRA4', 'Letter', 'Legal', 'Executive', 'Folio', 'Demy', 'Royal', 'A' (Type A paperback 111x178mm), 'B' (Type B paperback 128x198mm).
