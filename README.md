@@ -5,6 +5,9 @@ Generate pdf file with printable labels
  ## CREATE A PDF FILE WITH LABELS EASELY:
 You can get a pdf file with labels for print. It can set easely with any type of labels widths ang heights, papers, etc... You can draw a single border if you need it. You can get the pdf file generated into a browser, download, get a string of the pdf or save it to the server. 100% written in PHP (pure PHP). Mpdf library required.
 
+# SCREENSHOT:
+![Screenshot of the pdf labels created in Pure PHP](https://github.com/vivesweb/printable_labels_pdf/blob/main/test_pdf_labels.png?raw=true) Test with VirtualBox Ubuntu Server 20.04.2 LTS (Focal Fossa) with PHP7.4.3 in 18 seconds.
+
 # You can see a test result here:
 
 https://github.com/vivesweb/printable_labels_pdf/blob/main/pritable_labels_pdf.pdf
