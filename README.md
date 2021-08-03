@@ -1,5 +1,5 @@
 # printable_labels_pdf
-Generate pdf file with printable labels
+Generate pdf file with printable labels with PHP code.
 
 
  ## CREATE A PDF FILE WITH LABELS EASELY:
