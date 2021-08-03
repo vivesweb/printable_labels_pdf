@@ -79,7 +79,7 @@ ALL MEASURES ARE IN CM.
 - _num_cols_: Num of cols in the page. If not set, 2 cols by default.
 - _margin_left_page_: Margin at left of page before begin first col of labels (in cm.). If not set, 0 by default.
 - _margin_top_page_: Margin at top of page before begin first row of labels (in cm.). If not set, 0 by default.
-- _margin_right_label_: margin between labels at right (in cm.). If not set, 0 by default.
+- _margin_left_label_: margin between labels at left (in cm.). If not set, 0 by default.
 - _margin_bottom_label_: margin between labels at bottom (in cm.). If not set, 0 by default.
 - _padding_left_label_: space between border of label and html content inside the label, beginning at left (in cm.). If not set, 0 by default.
 - _padding_top_label_: space between border of label and html content inside the label, beginning at top (in cm.). If not set, 0 by default.
@@ -234,7 +234,7 @@ You have included a Benchmark in the internal data of pdf properties (see creato
  - Label height: 2.33
  - margin_left_page: 1.3
  - margin_top_page: .2
- - margin_right_label: .2
+ - margin_left_label: .2
  - margin_bottom_label: .2
  - padding_left_label: .25
  - padding_top_label: .25
