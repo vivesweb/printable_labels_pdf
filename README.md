@@ -155,7 +155,7 @@ $printable_labels_pdf->get_labels_pdf('/some_dir/test.pdf', 'F'); // Save pdf in
   
 **BENCHMARK:**
  
-You have included a Benchmark in the internal data of pdf properties (see creator application data) :D
+You have included a Benchmark in the internal data of pdf properties (see creator application data) :smiley:
  
  Configuration TEST in Virtual Ubuntu Linux:
  - Num labels: 2.499
