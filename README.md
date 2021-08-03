@@ -200,7 +200,7 @@ $printable_labels_pdf->get_labels_pdf('test.pdf', 'D'); // Download pdf
 
 
 **d) Save pdf file in server path**
-$printable_labels_pdf->get_labels_pdf('/some_dir/test.pdf', 'F'); // Save pdf in some dir of the server
+$printable_labels_pdf->get_labels_pdf('/some_dir/test.pdf', 'F'); // Save pdf in some dir of the server. Ensure that you have writable perms to the folder
   
   
   
