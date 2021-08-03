@@ -39,6 +39,12 @@ https://github.com/vivesweb/printable_labels_pdf/blob/main/pritable_labels_pdf.p
  
  *example.php* -> **Example File**.
  
+ *pritable_labels_pdf.pdf* -> **Example pdf with labels File created**.
+ 
+ *test_pdf_labels.png* -> **Screenshot of a pdf file created**.
+ 
+ *test_pdf_labels_2.png* -> **Screenshot of the content data inside the pdf (with benchmark)**.
+ 
  
  # INSTALLATION:
  A lot of easy :smiley:. It is written in PURE PHP. Only need to include the files. Tested on basic PHP installation
