@@ -79,9 +79,11 @@ ALL MEASURES ARE IN CM.
 - padding_top_label: space between border of label and html content inside the label, beginning at top (in cm.). If not set, 0 by default.
 - skip_first_row: set if you want to skip first row. Some printers cannot print the first row. You can to skip it (true|false). If not set, false by default.
 - skip_last_row: set if you want to skip last row. Some printers cannot print the last row. You can to skip it (true|false). If not set, false by default.
-- page_format: Measures of the page. You can to give a values or a string format. See https://mpdf.github.io/ documentation.
+- page_format: Measures of the page ('A4', for example). You can to give a values or a string format. See https://mpdf.github.io/ documentation.
 	// array: [210,297].
+	
 	// string format: 'A0’ - 'A10', 'B0' - 'B10', 'C0' - 'C10', '4A0', '2A0', 'RA0' - 'RA4', 'SRA0' - 'SRA4', 'Letter', 'Legal', 'Executive', 'Folio', 'Demy', 'Royal', 'A' (Type A paperback 111x178mm), 'B' (Type B paperback 128x198mm).
+	
 - page_orientation: Portrait or Landscape. ('P'|'L'). If not set, 'P'ortrait by default.
 - default_font: String. If not set, 'Times'. See https://mpdf.github.io/ documentation for available fonts.
 - default_font_size: In pixels. If not set, 0 that means CSS default.
