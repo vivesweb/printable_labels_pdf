@@ -183,6 +183,8 @@ You have included a Benchmark in the internal data of pdf properties (see creato
  - 125 pages created in 18 seconds
  
 * See the original pdf created for benchmark here: https://github.com/vivesweb/printable_labels_pdf/blob/main/pritable_labels_pdf.pdf
+
+In a simple Raspberry PI b 2 i get with the same config, with 999 labels, done in 2 minutes and 28 seconds :sweat_smile:
  
  **Of course. You can use it freely :vulcan_salute::alien:**
  
