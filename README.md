@@ -32,7 +32,7 @@ You can get a pdf file with labels for print. It can set easely with any type of
          require_once( 'csv_pair_file_class.php' );
          
 * You need to install mpdf library. Remember to set writable mpdf/vendor/mpdf/mpdf/tmp. See https://mpdf.github.io/ documentation
-** If you change the mpdf dir installation, make sure mpdf library is included in printable_labels_pdf_class.php at line 106:
+** If you change the mpdf dir installation, make sure mpdf library is included in printable_labels_pdf_class.php at line 106 in printable_labels_pdf_class.php:
 
           require_once __DIR__ . '/mpdf/vendor/autoload.php';
  
