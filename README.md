@@ -28,6 +28,8 @@ https://github.com/vivesweb/printable_labels_pdf/blob/main/pritable_labels_pdf.p
  		
     - VirtualBox Ubuntu Server 20.04.2 LTS (Focal Fossa) with PHP7.4.3
 
+    - Red Hat Enterprise Linux Server release 6.10 (Santiago) PHP Version 7.3.25 (Production Server) 512Mb Memory Limit
+
 - **MPDF LIBRARY NEEDED TO BY INSTALLED: https://mpdf.github.io/**
 - Ensure to add correct path at line 106 in the file _printable_labels_pdf_class.php_:
 
